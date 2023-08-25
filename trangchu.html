@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./res.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Thư Viện Điện Tử</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="grid">
+            <nav class="header__navbar">
+                <ul class="header__list">
+                    <li class="header-item">
+                        <a href="#" class="header-link">
+                            <i class="far fa-question-circle"></i>
+                            Trợ giúp
+                        </a>
+                        </li>
+                    <li class="header-item header--strong header--separate">
+                            Đăng ký
+                    </li>
+                    <li class="header-item header--strong">
+                            Đăng nhập
+                    </li>
+                </ul>
+            </nav>
+            <!-- header-genera -->
+            <div class="header-general">
+                <div class="header__logo">
+                    <a >
+                        Kho Sách
+                    </a>
+                </div>
+                <div class="header__search">
+                    <div id="searchContainer">
+                        <input type="text" class="searchInput" placeholder="Tìm kiếm">
+                    </div>
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <script src="timkiem.js"></script>
+                </div>
+                <div class="header__cart">
+                    <i class="header-icon fas fa-phone"></i>
+                </div>
+                <h2>Liên hệ & Hỗ trợ</h2>
+                <div class="header__cart">
+                    <span class="header-amount">+</span>
+                        <i class="header-icon fas fa-book-medical "></i>
+                </div>
+                <h2>Lưu trữ</h2>
+            </div>
+            </div>
+        </header>
+    </div>
+    <div class="wrapper_container">
+        <div class="grid">
+            <div class="grid__row wrapper-content">
+                <div class="grid__column-2">
+                    <!-- Begin: Category -->
+                    <nav class="container__category">
+                        <h3 class="container__category-heading">
+                            <i class="container__category-icon fas fa-list-ul"></i>
+                            Danh mục
+                        </h3>
+                        <ul class="container__category-list">
+                            <li class="container__category-item container__category-item--active">
+                                <a href="#" class="container__category-link">
+                                    Kỹ Thuật Công Nghệ
+                                </a>
+                            </li>
+                            <li class="container__category-item">
+                                <a href="#" class="container__category-link">
+                                    Kinh Tế Luật
+                                </a>
+                            </li>
+                            <li class="container__category-item">
+                                <a href="#" class="container__category-link">
+                                    NN & CNTP
+                                </a>
+                            </li>
+                            <li class="container__category-item">
+                                <a href="#" class="container__category-link">
+                                    Sư Phạm & KHCB
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- End: Category -->
+                </div>
+                <div class="grid__column-10">
+                    <div class="container__slide hide-on-mobile-table">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                              <img src="img/1.jpg" style="width:100%">
+                              <div class="text">Slide 1</div>
+                            </div>
+                          
+                            <div class="mySlides">
+                              <img src="img/2.jpg" style="width:100%">
+                              <div class="text">Slide 2</div>
+                            </div>
+                          
+                            <div class="mySlides">
+                              <img src="img/3.jpg" style="width:100%">
+                              <div class="text">Slide 3</div>
+                            </div>
+                          
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                          </div>
+                          <br>
+                          
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                        <script src="javascript.js"></script>
+                    </div>
+
+                    <div class="container__product">
+                        <div class="grid">
+                            <div class="pagination">
+                            <div class="list">
+                                <div class="item">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-img"
+                                            style="background-image: url(https://images.hcmcpv.org.vn/res/news/2020/10/15-10-2020-bo-gddt-yeu-cau-sua-sgk-mon-tieng-viet-lop-1-cua-bo-sach-canh-dieu-AFD58D95.jpg);">
+                                        </div>
+                                        <h4 class="container__product-heading">sách Tiếng Việt lớp 1 (NSBGD vs
+                                            DTTG)</h4>
+                                        <div class="container__product-price">
+                                            <span class="container__product-current">TG: Đào Trọng
+                                                Trí</span>
+                                        </div>
+                                        <div class="container__product-score">
+                                            <span
+                                                class="container__product-point container__product-point--active">
+                                                <i
+                                                    class="container__product-solid far fa-heart"></i>
+                                                <i
+                                                    class="container__product-regular fas fa-heart"></i>
+                                                <span class="container__product-sold">71 Yêu Thích</span>
+                                            </span>
+                                            <span class="container__product-rating">
+                                                <i
+                                                    class="container__product-rating--active fas fa-bookmark"></i>
+                                            </span>
+
+                                        </div>
+                                        <div class="container__product-source">
+                                            <span class="container__product-brand">Sư Phạm</span>
+                                            <span class="container__product-country">GD - TH</span>
+                                        </div>
+                                        <span class="container__product-favourite">
+                                            <span>Đã thêm</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                
+                                <div class="item">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-img"
+                                            style="background-image: url(https://astral.vn/wp-content/uploads/2023/07/8936186548284_-_copy.png);">
+                                        </div>
+                                        <h4 class="container__product-heading">999 lá thư gửi cho chính mình (NSBGD vs
+                                            DTTG)</h4>
+                                        <div class="container__product-price">
+                                            <span class="container__product-current">TG: Đào Trọng
+                                                Trí</span>
+                                        </div>
+                                        <div class="container__product-score">
+                                            <span
+                                                class="container__product-point container__product-point--active">
+                                                <i
+                                                    class="container__product-solid far fa-heart"></i>
+                                                <i
+                                                    class="container__product-regular fas fa-heart"></i>
+                                                <span class="container__product-sold">71 Yêu Thích</span>
+                                            </span>
+                                            <span class="container__product-rating">
+                                                <i
+                                                    class="container__product-rating--active fas fa-bookmark"></i>
+                                            </span>
+
+                                        </div>
+                                        <div class="container__product-source">
+                                            <span class="container__product-brand">Sư Phạm</span>
+                                            <span class="container__product-country">GD - TH</span>
+                                        </div>
+                                        <span class="container__product-favourite">
+                                            <span>Đã thêm</span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-img"
+                                            style="background-image: url(https://images.hcmcpv.org.vn/res/news/2020/10/15-10-2020-bo-gddt-yeu-cau-sua-sgk-mon-tieng-viet-lop-1-cua-bo-sach-canh-dieu-AFD58D95.jpg);">
+                                        </div>
+                                        <h4 class="container__product-heading">sách Tiếng Việt lớp 1 (NSBGD vs
+                                            DTTG)</h4>
+                                        <div class="container__product-price">
+                                            <span class="container__product-current">TG: Đào Trọng
+                                                Trí</span>
+                                        </div>
+                                        <div class="container__product-score">
+                                            <span
+                                                class="container__product-point container__product-point--active">
+                                                <i
+                                                    class="container__product-solid far fa-heart"></i>
+                                                <i
+                                                    class="container__product-regular fas fa-heart"></i>
+                                                <span class="container__product-sold">71 Yêu Thích</span>
+                                            </span>
+                                            <span class="container__product-rating">
+                                                <i
+                                                    class="container__product-rating--active fas fa-bookmark"></i>
+                                            </span>
+
+                                        </div>
+                                        <div class="container__product-source">
+                                            <span class="container__product-brand">Sư Phạm</span>
+                                            <span class="container__product-country">GD - TH</span>
+                                        </div>
+                                        <span class="container__product-favourite">
+                                            <span>Đã thêm</span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-img"
+                                            style="background-image: url(https://images.hcmcpv.org.vn/res/news/2020/10/15-10-2020-bo-gddt-yeu-cau-sua-sgk-mon-tieng-viet-lop-1-cua-bo-sach-canh-dieu-AFD58D95.jpg);">
+                                        </div>
+                                        <h4 class="container__product-heading">sách Tiếng Việt lớp 1 (NSBGD vs
+                                            DTTG)</h4>
+                                        <div class="container__product-price">
+                                            <span class="container__product-current">TG: Đào Trọng
+                                                Trí</span>
+                                        </div>
+                                        <div class="container__product-score">
+                                            <span
+                                                class="container__product-point container__product-point--active">
+                                                <i
+                                                    class="container__product-solid far fa-heart"></i>
+                                                <i
+                                                    class="container__product-regular fas fa-heart"></i>
+                                                <span class="container__product-sold">71 Yêu Thích</span>
+                                            </span>
+                                            <span class="container__product-rating">
+                                                <i
+                                                    class="container__product-rating--active fas fa-bookmark"></i>
+                                            </span>
+
+                                        </div>
+                                        <div class="container__product-source">
+                                            <span class="container__product-brand">Sư Phạm</span>
+                                            <span class="container__product-country">GD - TH</span>
+                                        </div>
+                                        <span class="container__product-favourite">
+                                            <span>Đã thêm</span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-img"
+                                            style="background-image: url(https://images.hcmcpv.org.vn/res/news/2020/10/15-10-2020-bo-gddt-yeu-cau-sua-sgk-mon-tieng-viet-lop-1-cua-bo-sach-canh-dieu-AFD58D95.jpg);">
+                                        </div>
+                                        <h4 class="container__product-heading">sách Tiếng Việt lớp 1 (NSBGD vs
+                                            DTTG)</h4>
+                                        <div class="container__product-price">
+                                            <span class="container__product-current">TG: Đào Trọng
+                                                Trí</span>
+                                        </div>
+                                        <div class="container__product-score">
+                                            <span
+                                                class="container__product-point container__product-point--active">
+                                                <i
+                                                    class="container__product-solid far fa-heart"></i>
+                                                <i
+                                                    class="container__product-regular fas fa-heart"></i>
+                                                <span class="container__product-sold">71 Yêu Thích</span>
+                                            </span>
+                                            <span class="container__product-rating">
+                                                <i
+                                                    class="container__product-rating--active fas fa-bookmark"></i>
+                                            </span>
+
+                                        </div>
+                                        <div class="container__product-source">
+                                            <span class="container__product-brand">Sư Phạm</span>
+                                            <span class="container__product-country">GD - TH</span>
+                                        </div>
+                                        <span class="container__product-favourite">
+                                            <span>Đã thêm</span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-img"
+                                            style="background-image: url(https://images.hcmcpv.org.vn/res/news/2020/10/15-10-2020-bo-gddt-yeu-cau-sua-sgk-mon-tieng-viet-lop-1-cua-bo-sach-canh-dieu-AFD58D95.jpg);">
+                                        </div>
+                                        <h4 class="container__product-heading">sách học lập trình (NSBGD vs
+                                            DTTG)</h4>
+                                        <div class="container__product-price">
+                                            <span class="container__product-current">TG: Đào Trọng
+                                                Trí</span>
+                                        </div>
+                                        <div class="container__product-score">
+                                            <span
+                                                class="container__product-point container__product-point--active">
+                                                <i
+                                                    class="container__product-solid far fa-heart"></i>
+                                                <i
+                                                    class="container__product-regular fas fa-heart"></i>
+                                                <span class="container__product-sold">71 Yêu Thích</span>
+                                            </span>
+                                            <span class="container__product-rating">
+                                                <i
+                                                    class="container__product-rating--active fas fa-bookmark"></i>
+                                            </span>
+
+                                        </div>
+                                        <div class="container__product-source">
+                                            <span class="container__product-brand">Sư Phạm</span>
+                                            <span class="container__product-country">GD - TH</span>
+                                        </div>
+                                        <span class="container__product-favourite">
+                                            <span>Đã thêm</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="pagination"> -->
+                                <a href="#" class="arrow prevbook">&lt;</a>
+                                <a href="#" class="arrow nextbook">&gt;</a>
+                            </div>
+                            <script src="productlist.js"></script> 
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            
+            <div class="auth-form">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">Đăng ký</h3>
+                    <span class="auth-form__switch-btn">Đăng nhập</span>
+                </div>
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="nhập email">                           
+                    </div>
+                    <div class="auth-from__group">
+                        <input type="password" class="auth-form__input" placeholder="nhập mật khẩu">                           
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input" placeholder="nhập lại mật khẩu">                           
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn">Trở lại</button>
+                        <button class="btn btn--primary">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+    <footer class="footer">
+        <div class="footer__bottom">
+            <div class="grid">
+                <ul class="footer__policy-list">
+                    <li class="footer__policy-item">
+                        <a href="" class="footer__policy-link">
+                            Trang Chủ
+                        </a>
+                    </li>
+                    <li class="footer__policy-item">
+                        <a href="" class="footer__policy-link">
+                            Danh Mục
+                        </a>
+                    </li>
+                    <li class="footer__policy-item">
+                        <a href="" class="footer__policy-link">
+                            Liên Hệ
+                        </a>
+                    </li>
+                    <li class="footer__policy-item">
+                        <a href="" class="footer__policy-link">
+                            Trợ Giúp
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__checked">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/vi/thumb/d/d1/Logo_tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ti%E1%BB%81n_Giang.svg/242px-Logo_tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ti%E1%BB%81n_Giang.svg.png">
+                    <p class="footer__checked-company">Trường Đại học Tiền Giang</p>
+                </div>
+                <div class="footer_information">
+                    <p class="footer_information-text">Địa chỉ: Số 71, đường Ấp Bắc, TP.Mỹ Tho, tỉnh Tiền Giang</p>
+                    <p class="footer_information-text">© 2023 - Bản quyền thuộc về Sinh viên khoa Công Nghệ Thông
+                        Tin</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+</body>
+</html>
